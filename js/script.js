@@ -26,18 +26,27 @@ Provare a stampare la lista in pagina invece che in console.
 // 6 - Recuperare gli elementi in pagina
 // 7 - Stampare in pagina
 
+// Recupero gli elementi in pagina
 const gameElement = document.getElementById('game');
 
+
+let result ='';
 // Creo un ciclo che stampi in console i numeri da 1 a 100
 for (let i = 1; i <= 100; i++) {
+    
     // Cambio il risultato per i multipli di 3 o di 5
-    if ((i % 3 == 0) && (i % 5 == 0)) {
-        console.log(`FizzBuzz `);
-    } else if (i % 3 == 0) {
-        console.log(`Fizz `);
-    } else if (i % 5 == 0) {
-        console.log(`Buzz `);
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+        result += 'FizzBuzz<br>';
+    } else if (i % 3 === 0) {
+        result += 'Fizz<br>';
+    } else if (i % 5 === 0) {
+        result += 'Buzz<br>';
     } else {
-        console.log(`${i}`);
+        result += `${i}<br>`;
     }
 }
+
+console.log(`result a fine ciclo` , result)
+
+// Stampo in pagina
+gameElement.innerHTML = result;
