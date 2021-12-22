@@ -1,16 +1,8 @@
 /* Generics */
+body {
+    padding-top: 20px;
+}
 
-
-/* Utilities */
-
-
-/* Header */
-
-
-/* Main */
-
-
-/* Section */
-
-
-/* Footer */
+li {
+    width: 200px;
+}

@@ -40,7 +40,7 @@ for (let i = 1; i <= 100; i++) {
     } else if (i % 3 === 0) {
         result += '<li>Fizz</li>';
     } else if (i % 5 === 0) {
-        result += '<li>Buzz</li)';
+        result += '<li>Buzz</li>';
     } else {
         result += `<li>${i}</li>`;
     }
