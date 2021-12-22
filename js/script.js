@@ -28,13 +28,16 @@ Provare a stampare la lista in pagina invece che in console.
 
 const gameElement = document.getElementById('game');
 
-let result ='';
-
+// Creo un ciclo che stampi in console i numeri da 1 a 100
 for (let i = 1; i <= 100; i++) {
-    // Creo un ciclo che stampi in console i numeri da 1 a 100
-    result += `${i} `
+    // Cambio il risultato per i multipli di 3 o di 5
+    if ((i % 3 == 0) && (i % 5 == 0)) {
+        console.log(`FizzBuzz `);
+    } else if (i % 3 == 0) {
+        console.log(`Fizz `);
+    } else if (i % 5 == 0) {
+        console.log(`Buzz `);
+    } else {
+        console.log(`${i}`);
+    }
 }
-
-console.log(`result a fine ciclo: `, result);
-
-gameElement.innerHTML = result;
