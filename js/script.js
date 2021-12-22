@@ -36,3 +36,5 @@ for (let i = 0; i <= 100; i++) {
 }
 
 console.log(`result a fine ciclo: `, result);
+
+gameElement.innerHTML = result;
