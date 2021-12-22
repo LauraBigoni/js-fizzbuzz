@@ -36,17 +36,17 @@ for (let i = 1; i <= 100; i++) {
     
     // Cambio il risultato per i multipli di 3 o di 5
     if ((i % 3 === 0) && (i % 5 === 0)) {
-        result += 'FizzBuzz<br>';
+        result += '<li>FizzBuzz</li>';
     } else if (i % 3 === 0) {
-        result += 'Fizz<br>';
+        result += '<li>Fizz</li>';
     } else if (i % 5 === 0) {
-        result += 'Buzz<br>';
+        result += '<li>Buzz</li)';
     } else {
-        result += `${i}<br>`;
+        result += `<li>${i}</li>`;
     }
 }
 
-console.log(`result a fine ciclo` , result)
+console.log(`result a fine ciclo`, result)
 
 // Stampo in pagina
 gameElement.innerHTML = result;
